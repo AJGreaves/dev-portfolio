@@ -1,6 +1,7 @@
 /*  
 mid-blue: #2596be
 very dark brown: #282125
+dark-blue: #3c4c54
 Smoky cream: #f1ece6
 */
 
@@ -9,6 +10,7 @@ Smoky cream: #f1ece6
 body {
     font-family: "Poppins", sans-serif;
     color: #282125;
+    background-color: #3c4c54;
 }
 
 h1,
@@ -31,11 +33,15 @@ h3 {
     border: #2596be
 }
 
+.white-background {
+    background-color: white;
+}
+
 #portfolio {
     background-color: #f1ece6;
 }
 
 #portfolio .card-title,
 h2 {
-    color: #2596be;
+    color: #3c4c54;
 }
