@@ -11,6 +11,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- header -->
@@ -20,7 +21,7 @@
         navbar-expand-sm changed to navbar-expand-sm to only show collapsed menu on xs and small screens,
         mb-4 used to add margin under navbar 
       -->
-      <nav class="navbar navbar-expand-sm bg-body-tertiary mb-4">
+      <nav class="navbar navbar-expand-sm bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Mei Wong</a>
           <button
@@ -55,46 +56,48 @@
       </nav>
 
       <!-- Hero section -->
-      <section class="hero-section row">
+      <section class="row">
         <!-- text-center class used to centre text -->
-        <div class="col-12 text-center">
-          <h1 class="display-4">Mei Wong</h1>
-          <h2 class="display-6">Software Developer</h2>
-          <p>
-            Hello! I'm Mei, a
-            <strong>passionate and creative Software Developer</strong>
-            dedicated to building engaging, user-friendly websites and
-            applications. With a keen eye for design and a love for coding,
-            <strong
-              >I translate complex ideas into smooth, accessible digital
-              experiences.</strong
-            >
-            Eager to collaborate and grow, I'm on the lookout for opportunities
-            to innovate and excel.
-          </p>
-          <p class="lead">Let's create something amazing together!</p>
+        <div id="hero-section" class="col-12 text-center">
+          <div class="hero-background-img">
+            <h1 class="display-4">Mei Wong</h1>
+            <h2 class="display-6">Software Developer</h2>
+            <p>
+              Hello! I'm Mei, a
+              <strong>passionate and creative Software Developer</strong>
+              dedicated to building engaging, user-friendly websites and
+              applications. With a keen eye for design and a love for coding,
+              <strong
+                >I translate complex ideas into smooth, accessible digital
+                experiences.</strong
+              >
+              Eager to collaborate and grow, I'm on the lookout for
+              opportunities to innovate and excel.
+            </p>
+            <p class="lead">Let's create something amazing together!</p>
 
-          <!-- 
+            <!-- 
             Button trigger modal 
             mb-4 used to add margin under button 
             do not change the ID of the button or a specific event listener will need to be set using JS (outside of scope for students) 
           -->
-          <button
-            type="button"
-            class="btn btn-primary mb-4"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Subscribe to my newsletter!
-          </button>
+            <button
+              id="subscribe-button"
+              type="button"
+              class="btn btn-primary my-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Subscribe to my newsletter!
+            </button>
+          </div>
         </div>
-        <hr />
       </section>
     </header>
     <main class="container">
       <section id="about" class="row">
         <!-- mb-4 used to add margin under heading -->
-        <div class="col-12 text-center mb-4">
+        <div class="col-12 text-center my-4">
           <h2 class="display-5">About Mei</h2>
         </div>
         <!-- mb-4 used to add margin under image -->
@@ -127,11 +130,10 @@
           </p>
         </div>
       </section>
-      <hr />
-      <section id="portfolio" class="mb-4">
+      <section id="portfolio" class="container mb-4 pb-4">
         <div class="row">
           <div class="col-12">
-            <h2 class="display-5 text-center mb-4">Portfolio</h2>
+            <h2 class="display-5 text-center my-4">Portfolio</h2>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card mb-3">
@@ -143,21 +145,21 @@
                   for dogs, this site showcases convenient scheduling options
                   and services.
                 </p>
-                <a href="#" class="btn btn-info">Visit site</a>
+                <a href="#" class="btn btn-outline-secondary">Visit site</a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card mb-3">
               <div class="card-body">
-                <h5 class="card-title">We Wellness:</h5>
+                <h5 class="card-title">We Wellness</h5>
                 <p class="card-text">
                   A comprehensive platform offering a wide range of wellness
                   services and high-end products. From yoga classes to
                   nutritional guidance, users can find everything they need to
                   nurture their body, mind, and spirit.
                 </p>
-                <a href="#" class="btn btn-info">Visit site</a>
+                <a href="#" class="btn btn-outline-secondary">Visit site</a>
               </div>
             </div>
           </div>
@@ -171,7 +173,7 @@
                   learners in mind, this platform turns complex problems into
                   engaging activities.
                 </p>
-                <a href="#" class="btn btn-info">Visit site</a>
+                <a href="#" class="btn btn-outline-secondary">Visit site</a>
               </div>
             </div>
           </div>
@@ -181,17 +183,16 @@
                 <h5 class="card-title">BMI Calculator</h5>
                 <p class="card-text">
                   Promoting a healthier lifestyle with an easy-to-use BMI
-                  Calculator. Designed to provide quick and simple health
-                  assessments, this tool helps users understand and manage their
-                  body mass index with just a few clicks.
+                  Calculator. Designed to provide quick health assessments, this
+                  tool helps users understand and manage their body mass index
+                  with just a few clicks.
                 </p>
-                <a href="#" class="btn btn-info">Visit site</a>
+                <a href="#" class="btn btn-outline-secondary">Visit site</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <hr />
     </main>
     <footer id="contact" class="container">
       <div class="row justify-content-center">
@@ -278,7 +279,13 @@
                 />
               </div>
               <div class="col-12 mb-4">
-                <button type="submit" class="btn btn-primary">Sign up!</button>
+                <button
+                  type="submit"
+                  id="sign-up-button"
+                  class="btn btn-primary"
+                >
+                  Sign up!
+                </button>
               </div>
             </form>
           </div>

@@ -1,0 +1,41 @@
+/*  
+mid-blue: #2596be
+very dark brown: #282125
+Smoky cream: #f1ece6
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #282125;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "DM Serif Display", serif;
+}
+
+.hero-background-img {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    padding: 5%;
+}
+
+#subscribe-button,
+#sign-up-button {
+    background-color: #2596be;
+    border: #2596be
+}
+
+#portfolio {
+    background-color: #f1ece6;
+}
+
+#portfolio .card-title,
+h2 {
+    color: #2596be;
+}
