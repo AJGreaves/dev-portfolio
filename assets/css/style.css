@@ -1,47 +1,99 @@
 /*  
-mid-blue: #2596be
-very dark brown: #282125
-dark-blue: #3c4c54
-Smoky cream: #f1ece6
+    #b5e6fe; light blue
+    #a4c2d1; egg blue
+    #dbdcde; light grey
+    #2596be; mid-blue
+    #184f63; dark-blue
 */
+
+/* global styles */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
 
 body {
     font-family: "Poppins", sans-serif;
-    color: #282125;
-    background-color: #3c4c54;
+    background-color: #a4c2d1; /* egg blue */
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: "DM Serif Display", serif;
+    color: #184f63; /* dark blue */
 }
 
-.hero-background-img {
+/* Header */
+
+#hero {
+    background-color: #dbdcde; /* light grey */
     background-image: url("../images/background.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 50% 75%;
     min-height: 500px;
-    padding: 5%;
+    padding: 5% 7%;
 }
 
-#subscribe-button,
-#sign-up-button {
+/* About section */
+
+#about {
+    background-color: white;
+}
+
+/* Buttons */
+
+.custom-button {
     background-color: #2596be;
     border: #2596be
 }
 
-.white-background {
-    background-color: white;
+.custom-button:hover {
+    background-color: #1d6d8a;
+    border: #1d6d8a
 }
+
+/* portfolio customisations */
 
 #portfolio {
-    background-color: #f1ece6;
+    background-color: #dbdcde; /* light grey */
 }
 
-#portfolio .card-title,
-h2 {
-    color: #3c4c54;
+#portfolio .card-title {
+    color: #2596be;
+}
+
+/* fixes one portfolio card being too short 
+on md & lg screens due to text formatting */
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+#portfolio .btn:hover {
+    background-color: #2596be;
+}
+
+/* Contact customisations */
+#contact {
+    background-color: white; 
+}
+
+#contact label {
+    color: #20627b; /* dark blue */
+}
+
+/* Other customisations */
+
+/* Remove bootstrappy curved edges (from buttons, cards, 
+input fields etc) to give site a sharper appearence */
+#portfolio *,
+#contact *,
+#modal-content *,
+.sharp-corners {
+    border-radius: 0;
+}
+
+/* Bootstrap breakpoint for xl screens */
+@media screen and (min-width: 1400px){
+    /* fixes all portfolio cards being too tall on xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }
 }
