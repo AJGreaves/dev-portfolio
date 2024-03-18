@@ -2,7 +2,7 @@
     #b5e6fe; light blue
     #a4c2d1; egg blue
     #dbdcde; light grey
-    #2596be; mid-blue
+    #1f7798; mid-blue
     #184f63; dark-blue
 */
 
@@ -41,8 +41,8 @@ h2 {
 /* Buttons */
 
 .custom-button {
-    background-color: #2596be;
-    border: #2596be
+    background-color: #1f7798;
+    border: #1f7798
 }
 
 .custom-button:hover {
@@ -57,7 +57,7 @@ h2 {
 }
 
 #portfolio .card-title {
-    color: #2596be;
+    color: #1f7798;
     font-size: 1.2rem;
 }
 
@@ -68,7 +68,7 @@ on md & lg screens due to text formatting */
 }
 
 #portfolio .btn:hover {
-    background-color: #2596be;
+    background-color: #1f7798;
 }
 
 /* Contact customisations */
